@@ -1,0 +1,44 @@
+<div class="header">
+  <div class="container">
+    <h1> Innovation Cloud </h1>
+    <p> Connect your ideas globally </p>
+    <a href="#"> Learn More </a>
+  </div>
+</div>
+
+<div class="nav">
+    <ul>
+        <li> Register </li>
+        <li> Schedule </li> 
+        <li> Sponsors </li>
+        <li> About </li>
+        <li> Contact </li>
+</div>
+
+<div class="main">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/cloud.svg" class="img-responsive">
+
+    <h2>The Innovation Cloud Conference</h2>
+    <p>Connect with the best minds across a wide range of industries to share ideas and brainstorm new solutions to challenging problems.</p>
+    <p>Hear industry leaders talk about what worked (and what didn't) so that you can save time on your most challenging projects.</p>
+     <p>Learn about the latest research and technologies that you can use immediately to invent the future.</p>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1> Stay Connected </h1>
+    <p> Receive weekly insights from industry leaders </p>
+    <%= form_for(@signup) do |f| %>
+			<%= f.text_field :email, :placeholder => "Email" %>
+			<%= f.submit "Join", :class => "btn" %>
+		<% end %>
+  </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <p> &copy; Innovation Cloud Conference </p>
+    </div>
+</div>
